@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Data Base</title>
+    <link rel="stylesheet" href="style.css">   
+    <script type="module" defer src="./main.js"></script>
+    <script type="module" defer src="./database.js"></script>
+</head>
+ 
+<body>
+
+    <header>
+        <h1>Winc Movie Data Base</h1>
+        <p></p>
+    </header>
+
+    <nav>
+        <!-- User input box -->
+        <form id="user-input-box">
+            <label for="username">Type your search</label>
+            <input id="user-input" type="text" name="user input"><br>
+            <input id="submit-button" type="submit" value="Submit">
+        </form>
+        <!-- End user input box -->
+        
+        <form id="radioBtn-form">
+            <label><input id="#new-movies-after-2014" class="radio-button" type="radio" name="namefilter"
+                    value="latestmovie">
+                Nieuwste films, 2017 or newer</label>
+            <label><input id="#all-avengers" class="radio-button" type="radio" name="namefilter" value="avengers">
+                Avengers</label>
+            <label><input id="#all-xmen" class="radio-button" type="radio" name="namefilter" value="xmen">
+                X-Men</label>
+            <label><input id="#all-princess" class="radio-button" type="radio" name="namefilter" value="princess">
+                Princess</label>
+            <label><input id="#all-batman" class="radio-button" type="radio" name="namefilter" value="batman">
+                Batman</label>
+        </form>
+    </nav>
+
+    <main>
+        <ul id="movie-box">
+
+        </ul>
+    </main>
+
+
+
+
+</body>
+
+</html>
